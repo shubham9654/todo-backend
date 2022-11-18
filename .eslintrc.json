@@ -19,6 +19,7 @@
     ],
     "rules": {
         "semi": ["error", "always"],
-        "indent": [2, "tab"]
+        "indent": [2, "tab"],
+        "no-tabs": 0
     }
 }
