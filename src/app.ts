@@ -4,6 +4,7 @@ import express, { Express } from 'express';
 import cors from "cors";
 import { connectDB } from "./db/connect";
 
+import  { taskRouter } from './routes/task.route';
 
 // init express
 const app: Express = express();
@@ -13,9 +14,7 @@ app.use(express.json());
 app.use(cors());
 
 
-app.get('/', (req, res) => {
-	res.send('Hello World!');
-});
+app.use('/api/v1/task', taskRouter);
 
 const port: string | number = process.env.PORT || 3000;
 
