@@ -10,7 +10,7 @@
   "scripts": {
     "build": "tsc -p .",
     "dev": "ts-node-dev src/app.ts",
-    "start": "tsc && node dist/app.js",
+    "start": "node dist/app.js",
     "lint": "eslint src --ext .ts",
     "lint:fix": "eslint src --ext .ts --fix",
     "postinstall": "tsc"

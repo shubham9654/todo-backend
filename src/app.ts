@@ -14,6 +14,9 @@ app.use(express.json());
 app.use(cors());
 
 
+app.use('/api/v1/', (req,res) => {
+	res.send('Hello world..');
+});
 app.use('/api/v1/todo', taskRouter);
 
 const port: string | number = process.env.PORT || 3000;
