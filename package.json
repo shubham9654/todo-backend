@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/app.ts",
+  "engines": {
+    "npm": "8.19.2",
+    "node": "18.12.1"
+  },
   "scripts": {
     "build": "tsc -p .",
     "dev": "ts-node-dev src/app.ts",
     "start": "tsc && node dist/app.js",
     "lint": "eslint src --ext .ts",
-    "lint:fix": "eslint src --ext .ts --fix"
+    "lint:fix": "eslint src --ext .ts --fix",
+    "postinstall": "tsc"
   },
   "author": "shubham",
   "license": "ISC",
